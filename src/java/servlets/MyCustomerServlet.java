@@ -7,7 +7,6 @@ package servlets;
 
 import entity.Customer;
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -38,10 +37,10 @@ public class MyCustomerServlet extends HttpServlet {
         customer.setLastName("Prokofjeva");
         customer.setTelephone("55551111");
         customer.setBalance(3000);
-        
+
         request.setAttribute("customer", customer);
         request.getRequestDispatcher("/page1.jsp").forward(request, response);
-        
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
