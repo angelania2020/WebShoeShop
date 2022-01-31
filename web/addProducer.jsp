@@ -1,25 +1,25 @@
-<%-- 
-    Document   : addProducer
-    Created on : Jan 26, 2022, 10:10:46 PM
-    Author     : Angelina
---%>
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Добавление производителя</title>
-    </head>
-    <body>
-        <h1>Новый производитель</h1>
-        <h3>${infoText}</h3>
-        <form action="createProducer" method="POST">
-            Название производителя: <input type="text" name="producerName"><br>
-            Страна производителя: <input type="text" name="producerCountry"><br>
-            <input type="submit" value="Добавить"><br>
 
-        </form>
-    </body>
-</html>
+<h1 class="mt-3 d-flex justify-content-center">Новый производитель</h1>
+<h3 class="mt-3 d-flex justify-content-center">${infoText}</h3>
+
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <div class="col-6">
+            <form action="createProducer" method="POST">
+                <fieldset>
+                    <div class="form-group">
+                        <label for="producerName" class="form-label mt-4">Название производителя</label>
+                        <input type="text" name="producerName" class="form-control" id="producerName">
+                    </div>
+                    <div class="form-group">
+                        <label for="producerCountry" class="form-label mt-4">Страна производителя</label>
+                        <input type="text" name="producerCountry" class="form-control" id="producerCountry">
+                    </div>
+                    <button type="submit" class="btn btn-primary my-3">Добавить</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

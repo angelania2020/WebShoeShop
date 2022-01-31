@@ -16,6 +16,6 @@
         <h3>${infoText}</h3>
         <p>${producer.producerName} ${producer.producerCountry}</p>
         <p>Покупатель: ${customer.firstName} ${customer.lastName}. Телефон: ${customer.telephone}. Баланс: ${customer.balance}.</p>
-        <h1><a href="index.html">index</a></h1>
+        <h1><a href="index.jsp">index</a></h1>
     </body>
 </html>
